@@ -1,7 +1,11 @@
+import FormProducts from "../components/FormProducts";
+import TableProducts from "../components/TableProducts";
+
 export default function Products() {
     return (
       <>
-          <h1>This is the PRODUCTS page.</h1>
+          <FormProducts></FormProducts>
+          <TableProducts></TableProducts>
       </>
     );
   }

@@ -1,7 +1,11 @@
+import CardCustomers from "../components/CardCustomers";
+import FormCustomers from "../components/FormCustomers";
+
 export default function Customers() {
   return (
     <>
-        <h1>This is the CUSTOMERS page.</h1>
+      <FormCustomers />
+      
     </>
   );
 }
