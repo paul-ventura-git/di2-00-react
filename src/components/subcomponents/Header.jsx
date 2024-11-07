@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
+import PreHeader from "./PreHeader";
+import '../../assets/css/myStyles.css'
 
 export default function Header() {
   return (
     <>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <PreHeader></PreHeader>
+        <nav class="navbar navbar-expand-lg myNavbar">
         <div class="container">
-            <a class="navbar-brand" href="/">Navbar</a>
+            <a class="navbar-brand link-light" href="/">Claro</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -13,27 +16,27 @@ export default function Header() {
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
-                <Link class="nav-link" to={"/"}>Home</Link>
+                <Link class="nav-link link-light" to={"/"}>Home</Link>
                 </li>
 
                 <li class="nav-item">
-                <Link class="nav-link" to={"/about"}>About</Link>
+                <Link class="nav-link link-light" to={"/about"}>About</Link>
                 </li>
 
                 <li class="nav-item">
-                <Link class="nav-link" to={"/customers"}>Customers</Link>
+                <Link class="nav-link link-light" to={"/customers"}>Customers</Link>
                 </li>
 
                 <li class="nav-item">
-                <Link class="nav-link" to={"/products"}>Products</Link>
+                <Link class="nav-link link-light" to={"/products"}>Products</Link>
                 </li>
 
                 <li class="nav-item">
-                <Link class="nav-link" to={"/contact"}>Contact</Link>
+                <Link class="nav-link link-light" to={"/contact"}>Contact</Link>
                 </li>
 
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle link-light" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
                 </a>
 
